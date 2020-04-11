@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block main %} {% include 'flash_messages.html' %}
+
+<div id="profileDetailsContainer">
+    <div id="profileDetails">
+        <div id="profileDetails1">
+            <div>
+                <img id="profilePhoto" src=" {{ url_for('static', filename=profile.profile_picture) }}" alt=" Photo for {{ profile.first_name + " " + profile.last_name }}">
+            </div>
+            <div>
+                <h3 class="bold">{{ profile.first_name + " " + profile.last_name }}</h3>
+                <p class="grey"> <span class="glyphicon glyphicon-envelope"> {{ profile.email }}</p>
+                <p class="grey"> <span class="glyphicon glyphicon-globe">{{ profile.location }}</p>
+                <p class="grey"> <span class="glyphicon glyphicon-calendar"> Joined on {{ profile.date_joined }}</p>
+            </div>
+        </div>
+        <div id="aboutme">
+            <h4 class="grey">About Me</h4>
+            <p class="text">{{ profile.biography }}</p>
+        </div>
+        <div id="buttons">
+            <button id="sendmessage">Send Message</button> <button id="follow">Follow</button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
