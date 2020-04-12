@@ -3,7 +3,7 @@ body {
     background-color: rgb(226, 243, 243);
 }
 
-#main {
+#wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,7 @@ body {
 
 #aboutme {
     width: max-content;
+    margin-left: 26px;
 }
 
 .text {
