@@ -10,11 +10,11 @@ body {
     width: 1000px;
 }
 
-#profileContainer {
-    width: 650px;
+#userProfile {
+    width: 700px;
 }
 
-#profileForm {
+#profileInputForm {
     background-color: white;
     padding-left: 40px;
     padding-top: 25px;
